@@ -6,7 +6,7 @@ from watson_developer_cloud import ToneAnalyzerV3
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'f0039cc2d84aa1f4715d1e9e2a413d94'
 
-@app.route('/index', methods = ['POST','GET'])
+@app.route('/', methods = ['POST','GET'])
 def index():
 	translator = Translator(service_urls=['translate.google.com'])
 	form = SubmitSongForm()

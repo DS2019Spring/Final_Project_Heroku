@@ -1,1 +1,1 @@
-web: gunicorn musicmoodanalyzer.wsgi --log-file -
+web:gunicorn app:app

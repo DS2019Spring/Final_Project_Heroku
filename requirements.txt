@@ -2,8 +2,6 @@ Flask==0.12.4
 Jinja2==2.10
 Werkzeug==0.14.1
 certifi==0.0.8
-chardet==1.0.1
-distribute==0.6.24
 gunicorn==0.14.2
 requests==2.21.0	
 googletrans==2.4.0

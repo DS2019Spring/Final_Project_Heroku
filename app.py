@@ -29,26 +29,14 @@ def index():
 		for t in tone:
 			key = t.get('tone_name')
 			value = t.get('score')
-			if key == 'Anger':
-				sad_score += value
-			elif key == 'Fear':
-				sad_score += value
-			elif key == 'Sadness':
+			if key == 'Sadness':
 				sad_score += value
 			elif key == 'Joy':
 				happy_score += value
-			elif key == 'Confident':
-				happy_score += value
-			elif key == 'Analytical':
-				analytical_score += value
-			elif key == 'Tentative':
-				tentative_score += value
-		if sad_score>happy_score:
+		if sad_score>=happy_score:
 			return render_template("result.html",result = "SAD") 
 		if happy_score>sad_score:
 			return render_template("result.html",result = "HAPPY")
-		if sad_score == 0 and happy_score ==0:
-			return render_template("result.html",result = "NOT SURE")
 	# return redirect(url_for('result'))
 	return render_template('SongPage.html', title = 'SubmitSong', form=form)
 

@@ -15,18 +15,20 @@
   
             <h1> Song Mood: </h1>
             {% if result == 'HAPPY'%}
+            <h1> Happy </h1>
             <p>
-            	<img src="{{ url_for('static',filename='happy.gif') }}" alt="Happy Mood" >
+            	<img src="{{ url_for('static',filename='happy.gif') }}" alt="Happy" >
             </p>
             {% elif result == 'SAD'%}	
+            <h1> Sad </h1>
             <p>
-            	<img src="{{ url_for('static',filename='sad.gif') }}" alt="Sad face">
+            	<img src="{{ url_for('static',filename='sad.gif') }}" alt="Sad">
             </p>
             {% else %}
-            <p>
-            	<img src="{{ url_for('static',filename='neutral.gif') }}" alt="Sad face">
+            <h1> Neutral </h1>
+            <p>  
+            	<img src="{{ url_for('static',filename='neutral.gif') }}" alt="Neutral">
             </p>
-
             {% endif %}
           </div>
         </div>  

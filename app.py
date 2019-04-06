@@ -12,7 +12,7 @@ def index():
 	form = SubmitSongForm()
 	tone_analyzer = ToneAnalyzerV3(
     version='2017-09-21',
-    iam_apikey='6wBLQoK6imQQpEI2AUPPgyR3KSM1NK2_vvAn003fN_wv',
+    iam_apikey='4qxVRBM72jMkVef57_L0yJAabCf8eiEVcfdEvIfydMT2',
     url='https://gateway.watsonplatform.net/tone-analyzer/api')
 	# if form.validate_on_submit():
 	if request.method == 'POST':

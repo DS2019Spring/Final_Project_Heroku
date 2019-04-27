@@ -141,7 +141,7 @@ def user_attempts():
 
 		df_user.insert(0,"level_type",level_type)
 		attempt = pickle_model.predict(df_user)
-		list_questions.append(attempt)
+		list_questions=attempt
 		print(df_user)
 
 	return render_template('questions.html', len = len(list_questions[:5]), list_questions = list_questions)

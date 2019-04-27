@@ -124,21 +124,21 @@ def user_attempts():
 		list_questions=[]
 
 		if(level == 'A') :
-			level_type = 1
-		if(level == 'B') :
-			level_type = 2
-		if(level == 'C') :
-			level_type = 3
-		if(level == 'D') :
-			level_type = 4
-		if(level == 'E') :
-			level_type = 5
-		if(level == 'F') :
-			level_type = 6
-		if(level == 'G') :
-			level_type = 7
-		if(level == 'H') :
-			level_type = 8
+            level_type = 8
+        if(level == 'B') :
+            level_type = 7
+        if(level == 'C') :
+            level_type = 6
+        if(level == 'D') :
+            level_type = 5
+        if(level == 'E') :
+            level_type = 4
+        if(level == 'F') :
+            level_type = 3
+        if(level == 'G') :
+            level_type = 2
+        if(level == 'H') :
+            level_type = 1
 
 		df_user.insert(0,"level_type",level_type)
 		attempt = pickle_model.predict(df_user)

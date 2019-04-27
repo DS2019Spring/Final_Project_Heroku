@@ -13,7 +13,7 @@ import sys
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'f0039cc2d84aa1f4715d1e9e2a413d94'
 
-
+@app.route('/')
 @app.route('/home', methods = ['POST','GET'])
 def index():
 	if request.method == 'POST':

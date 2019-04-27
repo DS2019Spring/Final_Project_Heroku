@@ -3,8 +3,15 @@ from wtforms import StringField, SubmitField, TextAreaField
 from wtforms.validators import DataRequired, ValidationError
 
 
-class SubmitSongForm(FlaskForm):
+class SubmitUserDetailsForm(FlaskForm):
     # title = StringField('Enter the Song Lyrics Below:', validators=[DataRequired()])
     # title = StringField('Comment', validators=[DataRequired()])
-    content = TextAreaField('Content', validators=[DataRequired()])
+    content = TextAreaField('Id', validators=[DataRequired()])
+    submit = SubmitField('Submit')
+
+
+class QuestionsForm(FlaskForm):
+    # title = StringField('Enter the Song Lyrics Below:', validators=[DataRequired()])
+    # title = StringField('Comment', validators=[DataRequired()])
+    content = TextAreaField('Id', validators=[DataRequired()])
     submit = SubmitField('Submit')
